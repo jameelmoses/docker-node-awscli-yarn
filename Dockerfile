@@ -8,4 +8,5 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
 
 RUN apt-get update && \
     apt-get install -y yarn python-dev python-pip && \
-    pip install awscli
+    pip install awscli && \
+    yarn global add gulp-cli
